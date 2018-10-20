@@ -14,7 +14,7 @@ SEEDIP4=207.148.84.175
 docker run -d --rm --name $AC_NAME -ti \
   --net host \
   --mount "src=$AC_NAME,dst=/home/komodo/" \
-  kmdplatform/komodod \
+  kmdplatform/komodod:lite \
   -rpcuser=$USER \
   -rpcpassword=$PASSWD \
   -pubkey=$PUBKEY \
