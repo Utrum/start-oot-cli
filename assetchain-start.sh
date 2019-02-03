@@ -24,7 +24,6 @@ docker run -d --rm --name $AC_NAME -ti \
   -whitelist=127.0.0.1 \
   -ac_name=$AC_NAME \
   -ac_supply=$AC_SUPPLY \
-  -ac_sapling=5000000 \
   -addnode=$SEEDIP1 \
   -addnode=$SEEDIP2 \
   -addnode=$SEEDIP3 \
