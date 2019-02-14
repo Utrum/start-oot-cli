@@ -1,7 +1,5 @@
 #!/bin/bash
 
-USER=<your_rpc_user>
-PASSWD=<your_rpc_password>
 
 AC_NAME=OOT
 AC_SUPPLY=216000000
@@ -14,9 +12,7 @@ SEEDIP4=207.148.84.175
 docker run -d --rm --name $AC_NAME -ti \
   --net host \
   --mount "src=$AC_NAME,dst=/home/komodo/" \
-  kmdplatform/komodod:lite \
-  -rpcuser=$USER \
-  -rpcpassword=$PASSWD \
+  kmdplatform/komodod:sapling_lite \
   -pubkey=$PUBKEY \
   -bind=0.0.0.0 \
   -rpcbind=127.0.0.1 \
@@ -24,6 +20,7 @@ docker run -d --rm --name $AC_NAME -ti \
   -whitelist=127.0.0.1 \
   -ac_name=$AC_NAME \
   -ac_supply=$AC_SUPPLY \
+  -ac_sapling=5000000 \
   -addnode=$SEEDIP1 \
   -addnode=$SEEDIP2 \
   -addnode=$SEEDIP3 \
