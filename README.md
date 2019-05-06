@@ -11,5 +11,4 @@ You can also install Agama and run it with OOT activated in native mode.
 There's also the Docker method, for servers, for example:
 
 1. Install docker: https://docs.docker.com/install/linux/docker-ce/ubuntu/
-2. Modify `assetchain-start.sh` with custom rpc user and password
-3. Run it: `bash assetchain-start.sh`
+2. Run it: `bash assetchain-start.sh`
