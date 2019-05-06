@@ -12,7 +12,7 @@ SEEDIP4=207.148.84.175
 docker run -d --rm --name $AC_NAME -ti \
   --net host \
   --mount "src=$AC_NAME,dst=/home/komodo/" \
-  kmdplatform/komodod:sapling_lite \
+  kmdplatform/komodod:lite \
   -pubkey=$PUBKEY \
   -bind=0.0.0.0 \
   -rpcbind=127.0.0.1 \
